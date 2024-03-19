@@ -1,0 +1,259 @@
+// Import Bootstrap-Select
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./files/icons.min.css";
+@import "./files/plugins.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css";
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Flone - Minimalist eCommerce Bootstrap 4 Template
+    Version: 1
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    1. Template default CSS
+    2. Header style
+    3. Slider style
+    4. Banner style
+    5. Secting title style
+    6. Product style
+    7. Testimonial style
+    8. Feature style
+    9. Blog style
+    10. Footer style
+    11. Instagram style
+    12. Breadcrumb style
+    13. Shop style
+    14. Sidebar style
+    15. Product details style
+    16. Cart style
+    17. Login register style
+    18. Blog details style
+    19. About us style
+    20. Contact us style
+    21. Compare style
+    22. Checkout style
+    23. My account style
+
+-----------------------------------------------------------------------------------*/
+
+@import "variabls";
+@import "common";
+@import "header";
+@import "slider";
+@import "banner";
+@import "section-title";
+@import "product";
+@import "testimonial";
+@import "feature";
+@import "blog";
+@import "footer";
+@import "instagram";
+@import "breadcrumb";
+@import "shop";
+@import "sidebar";
+@import "product-details";
+@import "cart";
+@import "login-register";
+@import "blog-details";
+@import "about-us";
+@import "contact-us";
+@import "compare";
+@import "my-account";
+@import "checkout";
+
+body {
+  font-family: "Vazir" !important;
+}
+figure{
+    width: 100%!important;
+}
+figure img{
+    max-width: 100%;
+    height: auto;
+}
+.text-big{
+    font-size: 18px;
+    line-height: 40px;
+}
+.sli {
+  line-height: unset;
+}
+.not-in-stock {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background: #7a7a7a;
+  height: 35px;
+}
+
+.input-error-validation {
+  text-align: right;
+  font-size: 11px;
+  color: red;
+}
+.bestSelling{
+    display: flex;
+    flex-direction: row;
+}
+.bestSelling:before,
+.bestSelling:after{
+    content:"";
+    flex: 0.5 0.5 ;
+    border-bottom: 1px solid #1b1e21;
+    padding: 5px;
+    margin: auto;
+}
+.section-title p{
+    font-size: 18px;
+    line-height: 40px;
+    width: 100%;
+}
+.line-center{
+    margin:0;padding:0 10px;
+    background:#fff;
+    display:inline-block;
+}
+#myH3{
+    text-align:center;
+    position:relative;
+    z-index:2;
+
+}
+#myH3:after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    border-top:solid 1px #1c70be;
+    z-index:-1;
+}
+.product-details-content p {
+    font-size: 16px;
+    line-height: 32px;
+}
+.description-review-wrapper .description-review-bottom .product-description-wrapper p{
+    font-size: 16px;
+    line-height: 32px;
+}
+#preloader{
+    width: 100%;
+    height: 100%;
+    background: #f6f6f6;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10000;
+    transition: 1.5s;
+}
+@keyframes rotating {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#preloader #box{
+    width: 100px;
+    height: 100px;
+    border-top:3px solid #ff4800;
+    border-left:3px solid #ff4800;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    animation: rotating 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.hide{
+    opacity: 0;
+    transform: translateY(-3000px);
+    visibility: hidden;
+
+}
+.mega-menu>li{
+    padding: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+}
+
+.tag + .tag {
+    margin-left: .5em;
+}
+
+.tag-blue {
+    background: #56CCF2;
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+}
+
+.tag-brown {
+    background: #D1913C;
+    background: linear-gradient(to bottom, #FFD194, #D1913C);
+    color: #fafafa;
+}
+
+.tag-red {
+    background: #cb2d3e;
+    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+}
+
+.card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.user {
+    display: flex;
+    gap: .5rem;
+}
+
+.user__image {
+    border-radius: 50%;
+}
+
+.user__info > small {
+    color: #666;
+}
